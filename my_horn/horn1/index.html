@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어느날 머리에 뿔이 자랐다</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+	body,h1,h2,h3,h4,p,ul,li{margin: 0; padding: 0; }
+	body{background: #18181D;}
+	html{font-size: 16pt; font-family:'MaruBuri-Regular'; word-break: keep-all;}
+	a{color: #F2EFE8; text-decoration: none;}
+	a:hover{color:#4C5FFF; ;transition: all 0.3s;}
+	p{font-size: 16pt; line-height: 30pt;}
+	li{list-style-type: none; width: 10%; float: right; height: 63px;
+		text-align: center; line-height: 63px;}
+	nav{z-index: 100; width: 100vw;}
+	.fixed{position: fixed;}
+	.ivory{background: #F2EFE8; color: #18181D;}
+	.blue{color: #1200F2;}
+	.black{background: #18181D; color:#F2EFE8;}
+	.screen{height: 100vh; width: 100vw;}
+	.rela {position: relative;}
+	.absol {position: absolute;}
+	.multi{mix-blend-mode: multiply;}
+	.overflow{overflow: hidden;}
+	.row{width: 1280px;
+				margin: auto;
+				display: flex;
+				padding: 50px;
+				/*background: yellow;*/
+				margin-bottom: 10px;}
+	.subtitle{font-family: 'Bevan', cursive;
+		font-size: 33pt; line-height: 40pt;}
+	.col-1{width: 100%; margin: 0px 10px;}
+	.col-2{width: 50%; margin: 0px 10px;}
+	.col-3{width: 33.33%; margin: 0px 10px;}
+	.col-4{width: 25%; margin: 0px 10px;}
+	.col-6{width: 16.66%; margin: 0px 10px;}
+.logo{hheight:33px; width:44px; top: 15px; left: 50px; mix-blend-mode: none;}
+.logo2{height: 25px; mix-blend-mode: none;}
+.grid{display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+			grid-auto-rows: 200px; overflow: hidden;}
+
+
+
+	</style>
+</head>
+<body>
+<section class=" ivory rela">
+	<nav class="black" style="height: 63px;">
+		<img src="logo-ivory.svg" class="absol logo">
+	<ul>
+	<li><a href="../index.html">my horn</a></li> 
+	<li><a href="../../collection/index.html">collection</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+<li><a href="../../index.html">home</a></li> </ul></nav>
+
+<div class="row grid" style="margin-bottom: 0; padding-bottom: 100px;">
+	<div style="grid-column: 1 / 3; grid-row: 1/2;"><div class="col-1 subtitle">
+		<img src="logo2-black.svg" class="logo2">
+		<br>my horn <span style="font-family:'MaruBuri-Regular'; font-size: 22pt;">: 강박성 성격장애</span></div> </div>
+
+			<div style="grid-column: 1 / 4; grid-row: 2 / 6;  position:relative;"><img src="horn.png" style="position: absolute;">
+				<img src="hornsol1.png" style="grid-column: 1 / 4; grid-row: 2 / 6;position: absolute;display: none;" class="multi" id="flower1">
+				<img src="hornsol2.png" style="grid-column: 1 / 4; grid-row: 2 / 6;position: absolute;display: none;" class="multi" id="flower2">
+			<img src="hornsol3.png" style="grid-column: 1 / 4; grid-row: 2 / 6;display: none;position: absolute;" class="multi" id="flower3">
+
+			</div>
+
+			<div style="grid-column: 4 / 5; grid-row: 2 / 3;text-align: center;"><a href="./index.html"><img src="horn1.png" class="multi" style="width:280px"></a></div>
+			<div style="grid-column: 4 / 5; grid-row: 3 / 4;text-align: center;"><a href="../horn2/index.html"><img src="horn2.png" class="multi" style="width:200px; transform: translateY(-50px);"></a></div>
+			<div style="grid-column: 4 / 5; grid-row: 4 / 5;text-align: center;"><a href="../horn3/index.html"><img src="horn3.png" class="multi" style="width:230px"></a></div>
+			<div style="grid-column: 4 / 5; grid-row: 5 / 6;text-align: center;"><a href="../horn4/index.html"><img src="horn4.png" class="multi" style="width:260px;transform: translateY(-5px);"></a></div>
+			
+
+
+
+			<div style="grid-column: 1 / 2; grid-row: 6 / 7;text-align: center;" id="solution1"><img src="solution1.png" id="sol1" style="width:220px; transform: translateY(-60px);" onclick=" 
+		flower1.style.display = 'inline';" onmouseover="hey1.style.display='inline';" onmouseleave="hey1.style.display='none';"></div>
+
+			<div style="grid-column: 2 / 3; grid-row: 6 / 7;text-align: center;" id="solution2" onclick="flower2.style.display = 'inline';" onmouseover="hey2.style.display='inline';" onmouseleave="hey2.style.display='none';"><img src="solution2.png" style="width:220px;transform: translateY(-60px);"></div>
+
+			<div style="grid-column: 3 / 4; grid-row: 6 / 7;text-align: center;" id="solution3"><img src="solution3.png" style="width:220px;transform: translateY(-60px);" onclick="
+		flower3.style.display = 'inline';" onmouseover="hey3.style.display='inline';" onmouseleave="hey3.style.display='none';"></div>
+			
+
+
+			<div style="grid-column: 1 / 3; grid-row: 6 / 7; transform: translateY(-475px);display: none;" id="hey1">
+			<img src="hey.svg" style="width: 620px;"> <div style="padding:50px; transform: translateY(-430px); color: #F2EFE8;" >
+				<h1>멀리서 바라보기</h1> 
+				＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br><br>
+				<p>세세한 규칙과 순서에 몰두하다 본래 취지를 잃진 않으신가요? 당신이 하고 있는 일의 목적을 분명히 이해하고, 그 곳에 초점을 맞춰보세요. <br><br>멀리서 바라봐야 숲이 보인답니다.</p></div></div>
+
+			<div style="grid-column: 2 / 4; grid-row: 6 / 7;transform: translateY(-475px);display: none;" id="hey2">
+			<img src="hey.svg" style="width: 620px;"><div style="padding:50px; transform: translateY(-430px); color: #F2EFE8;" >
+				<h1>긴장감 낮추기</h1> 
+				＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br><br>
+				<p>무엇을 해야한다라는 당위적 사고에 사로잡혀 도덕적, 절차적으로 경직된 태도를 놓으셔야 합니다. <br><br>
+				너무 이성적으로 사고하기 보단 감정을 섞어 여유로운 태도로 임해보세요.</p></div></div>
+
+			<div style="grid-column: 3 / 5; grid-row: 6 / 7; transform: translateY(-475px);display: none;width: 620px;"id="hey3">
+			<img src="hey.svg" style="width: 620px;"><div style="padding:50px; transform: translateY(-430px); color: #F2EFE8;" >
+				<h1>자신의 꿈 찾기</h1> 
+				＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br><br>
+				<p>당신이 가진 성격장애는 주변의 과한 기대에 부응하기 위해 나타났을 수도 있어요.<br><br>
+				사회적인 가치를 따라 실현하는 것도 좋지만, 자신이 진정 원하는 것이 무엇인지 파악해야합니다.</p></div></div>
+		
+		
+
+			
+</div>
+</section>
+<footer class="black" style="height: 30vh; font-size: 0.8rem; line-height: 1.5rem">
+	<div class="row ">
+		<div class="col-4" style="font-size:1rem; line-height:2.5rem"><img src="logo2-ivory.svg" class="logo2"><h1>어느날 머리에<br>뿔이 자랐다</h1></div>
+		<div class="col-4"></div>
+		<div class="col-4">&copy; 2022. Ga-eun Cho<br>all rights reserved.</div>
+		<div class="col-4"><p style="font-family: 'Bevan', cursive;">reperence</p>Diagnostic and Statistical Manual of Mental Disorders (DSM-5)<br>American Psychiatric Association
+			<br><br><p style="font-family: 'Bevan', cursive;">contect</p>@ga.___.eunn<br>rkdms9285@gmail.com
+			</div>
+	</div>
+</footer>
+</body>
+</html>
