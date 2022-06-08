@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어느날 머리에 뿔이 자랐다</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	body,h1,h2,h3,h4,p,ul,li{margin: 0; padding: 0; }
+	body{background: #18181D;}
+	html{font-size: 16pt; font-family:'MaruBuri-Regular'; word-break: keep-all;}
+	/*img{mix-blend-mode: multiply;}*/
+	p{font-size: 16pt; line-height: 40pt; padding-left: 100px; color: #F2EFE8; z-index: 5; width: 50%;}
+	a{color: #F2EFE8; text-decoration: none;}
+	a:hover{color:#4C5FFF; ;transition: all 0.3s;}
+	li{list-style-type: none; width: 10%; float: right; height: 63px;
+		text-align: center; line-height: 63px;}
+	nav{position: fixed; z-index: 100; width: 100vw;}
+	section{margin-bottom: 200px;}
+	.fixed{position: fixed;}
+	.ivory{background: #F2EFE8; color: #18181D;}
+	.blue{color: #1200F2;}
+	.black{background: #18181D; color:#F2EFE8;}
+	.screen{height: 100vh; width: 100vw;}
+	.rela {position: relative;}
+	.absol {position: absolute;}
+	.multi{mix-blend-mode: multiply;}
+	.overflow{overflow: hidden;}
+	.row{width: 1280px;
+				margin: auto;
+				display: flex;
+				padding: 50px;
+				/*background: yellow;*/
+				margin-bottom: 10px;}
+	.subtitle{font-family: 'Bevan', cursive;
+		font-size: 33pt; color:#18181D; line-height: 40pt;}
+	.col-1{width: 100%; margin: 0px 10px;}
+	.col-2{width: 50%; margin: 0px 10px;}
+	.col-3{width: 33.33%; margin: 0px 10px;}
+	.col-6{width: 16.66%; margin: 0px 10px;}
+	.logo{height: 25px; mix-blend-mode: none;}
+	.sticky{position: sticky; top: 100px; width: 50%; height: 50%; mix-blend-mode:multiply;}
+	.button{height: 70px; width: 70px; border-radius: 100px; background: #F2EFE8; position: fixed; bottom: 50px; right: 50px; font-size: 24pt; line-height: 70px; text-align: center; color:#18181d; }
+	.button2{height: 70px; width: 70px; border-radius: 100px; background: #18181d; position: fixed; bottom: 50px; left: 50px; font-size: 24pt; line-height: 70px; text-align: center; color: #F2EFE8;}
+
+.grid{display: grid; height: 100%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-auto-rows: 33.33%; overflow: hidden;
+			}
+.box{background: #F2EFE8; border-radius: 30px; width: 80vw; height: 88vh; position: fixed; top: 6vh; left: 10vw; overflow: hidden;}
+.x{color:#1200F2; position: fixed; top: 8vh; right: 12vw; }
+.popup{position: fixed; width: 110vw; height: 110vh; top: -5vh; left: -5vw; background: #18181D; opacity: 0.6; filter: blur(5px);}
+#overlay{ position: fixed; display: none; z-index: 101; }
+.content{font-size: 0.7rem; line-height: 1.5rem; width: 100%; width: 100%;}
+.wow{font-family:'MaruBuri-Regular'; animation: wow 1.5s alternate infinite; color: #1200F2;}
+@keyframes wow{from{opacity: 1} to{opacity: 0}}
+
+	</style>
+</head>
+<body>
+	<nav class="black" style="height: 63px;">
+		<img src="logo-ivory.svg" class="absol" style="height:33px; width:44px; top: 15px; left: 50px; mix-blend-mode:normal;">
+	<ul>
+	<li><a href="../../my_horn/index.html">my horn</li> 
+	<li><a href="../index.html">collection</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+<li><a href="../../index.html">home</a></li> </ul>
+	</nav>
+<div class="ivory" style="width: 50vw; height: 100vh; position: fixed; z-index: -3;"></div>
+<div class="black" style="width: 50vw; height: 100vh; position: fixed; right: 0; z-index: 4;"></div>
+
+<header>
+	<div class="row fixed" style="left: 50vw; transform: translate(-50%); z-index:6;">
+		<div class="col-2 subtitle" style=" padding-top: 5vh;color:#18181D; ">
+			collection<p class="wow" style="width:100%; padding: 0;">* 이미지를 클릭하세요. </p></div>
+		<div class="col-2 black" style="line-height: 85.5px;">
+			<h1 style=" padding-top: 5vh;padding-left: 100px;">‘너가 좋다면 난 다 좋아.’</h1></div>
+	</div>
+</header>
+
+<section>
+	<div class="row flex" style="padding-top: 200px">
+			<img src="horn.png" class="sticky" style="cursor: pointer; padding-top: 8%; transform:scale(1.5) translate(-35%) ; " onclick="on()">
+			<p>R씨는 자존감이 결여되어 있고, 무슨 일을 하든지 어머니의 도움 없이는 엄두를 못 낸다. 새로운 옷을 사는 것, 친구 사귀는 것이나 대학학과 선택하는 것 등 어떤 행동도 어머니가 결정에 돕지 않은 경우가 없을 정도이다. 스스로의 판단과 능력에 신뢰가 부족하기 때문이다. <br>
+<br>
+이 때문에 어머니를 멀리 떠나는 것이 두려워 집 
+가까운 대학에 진학하였고, 결혼도 어머니가 괜찮다고 허락한 
+청년과 교제하다가 결혼하게 되었다. 어머니의 의견이라면 
+본인의 의사나 욕구를 표현하지 않았다.<br>
+<br>
+시간이 경과하면서 R씨는 불안하고 초조해져 상담을 받게 
+되었다. 상담에서 어머니나 남편이 점점 나이가 드는데 혹시 
+자기를 떠나게 되면 어떻게 하나 하는 걱정을 하였다. 
+ </p>
+		</div>
+	</section>
+
+	<section>
+		<div class="row flex">
+			<img src="1.png" class="sticky" style="cursor: pointer;transform:scale(2.0) translate(-60px) translateY(10vh);" onclick="on()">
+
+			<p>최근 남편의 권유로 다니게된 회사에서 골치를 썩히는 일이 
+생겼다. 근래 들어온 윗사람이 개인적 일까지 R씨에게 
+요구했지만 거절하기 어렵기 때문이다. 심지어 성추행에 흡사한 행동을 하는데도 이를 단호히 대처하지 못하고 되려 남편이 이 사실을 알까봐 걱정을 해왔다.<br>
+<br>
+R씨는 가능하다면 자신의 개성이나 자율성을 포기하는 방법을 택했다. 혹여 반대의견을 말한다면 상대의 기분을 상하게 하여 더 이상 지지나 칭찬을 받지 못하게 될까봐 두려운 탓이다. </p>
+		</div>
+	</section>
+	<section>
+		<div class="row flex rela" style="padding-top: 20vh">
+			<img src="2.png" class="sticky absol" style="left: 0; transform: scale(1.2) translate(-5vw); cursor: pointer;" onclick="on()">
+			<p>R씨의 의존적인 태도는 상대방이 자신을 떠나지 않았으면 하는 마음에서 비롯되었지만, 아이러니하게도 이러한 태도 때문에 오히려 상대방은 부담을 느껴 R씨를 떠나기 마련이었다. <br>
+<br>
+R씨는 독립심이 형성되는 청소년 시기에 부모님으로부터 과한 보호를 받고 자랐다. 독립 경험이 부족하여 내면의 힘을 충분히 길러내지 못한 것이다.</p>
+		</div>
+	</section>
+
+</section>
+<a href="../3/index.html"><div class="button" style="z-index: 6;">→</div></a>
+<a href="../1/index.html"><div class="button2">←</div></a>
+<footer class="black">
+</footer>
+
+<content id="overlay" class="content">
+<div class="popup"></div>
+<div class="box">
+<div class="grid">
+	<div style="grid-column: 1 / 2; grid-row: 1/3;">
+		<div class="grid" style="margin-top: 50px;margin-left: 50px;">
+			<div style="grid-column: 1 / 2; grid-row: 1/4;" class="blue"><b>별칭<br><br>특징<br><br><br><br><br>유발원인<br><br><br><br>평생유발율</b></div> 
+			<div style="grid-column: 2 / 4; grid-row: 1/4;">착한아이 콤플렉스<br><br>자신보다 상대방을 배려하여 모든 선택권을 양도하거나, 부탁을 거절하지 못한다. 이를 보호받는다고 생각하며 안정감을 느낀다.<br><br>청소년기 부모의 과잉보호,  혹은 건강한 애착관계 형성 실패로 인한 결핍감<br><br>0.5~1% 여성 비율 높음</div>
+		</div>
+	</div>
+	<div style="grid-column: 2 / 4; grid-row: 1/3; margin: 50px;"><img src="horn.png" class="multi" style="height: 48vh; margin: auto;"></div>
+	<div style="grid-column: 1 / 4; grid-row: 3/4;" class="black">
+		<div class="grid blue2" style="margin: 50px; margin-top: 20px;">
+			<div style="grid-column: 1/2;padding-right: 10px;color: #4C5FFF;"><h1>의존성 성격장애</h1><br>DSM-5 에서 제공하는 진단문항입니다.<br>
+다음 중 4가지 이상에 해당한다면 
+전문의와 상담을 추천드립니다.</div>
+			<div style="grid-column: 2/3;padding-right: 10px;">1) 다른 사람으로부터 받은 조언이나 확신이 없이는 스스로 결정을 내리지 못함<br>
+2) 자신의 생활 전반에 대해 책임을 지어 줄 다른 사람이 필요함<br>
+3) 주변 사람들의 지지나 동의를 잃는 것이 두려워 반대 의사를 표현하지 못함<br>
+4) 자신의 능력이나 판단에 대해 확신이 없어 어떤 일을 스스로 시작하는데 어려움이 있음<br>
+
+</div>
+			<div style="grid-column: 3/4; padding-right: 10px;">5) 불쾌한 일일지라도 다른 사람의 지지를 얻기 위해 그 일에 자원하기까지 함<br>
+6) 스스로 자신을 돌볼 수 없을 것 같은 두려움 때문에 혼자 있으면 불편하고 무력해짐<br>
+7) 자신을 돌봐주고 지지해주던 사람과 헤어지게 되면 다시 돌봄을 받기 위해 급히 다른 사람을 만나야 함<br>
+8) 항상 스스로를 돌보아야 하는 상황에 처할 수 있다는 두려움에 집착함</div>
+		</div>
+	</div>
+	
+</div>
+</div>
+<div class="x" onclick="off()" style="font-size: 40px;cursor: pointer;">×</div>
+</content>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";}
+</script>
+
+</body>
+</html>

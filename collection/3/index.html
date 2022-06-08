@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어느날 머리에 뿔이 자랐다</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	body,h1,h2,h3,h4,p,ul,li{margin: 0; padding: 0; }
+	body{background: #18181D;}
+	html{font-size: 16pt; font-family:'MaruBuri-Regular'; word-break: keep-all;}
+	/*img{mix-blend-mode: multiply;}*/
+	p{font-size: 16pt; line-height: 40pt; padding-left: 100px; color: #F2EFE8; z-index: 5;}
+	a{color: #F2EFE8; text-decoration: none;}
+	a:hover{color:#4C5FFF; ;transition: all 0.3s;}
+	li{list-style-type: none; width: 10%; float: right; height: 63px;
+		text-align: center; line-height: 63px;}
+	nav{position: fixed; z-index: 100; width: 100vw;}
+	section{margin-bottom: 200px;}
+	.fixed{position: fixed;}
+	.ivory{background: #F2EFE8; color: #18181D;}
+	.blue{color: #1200F2;}
+	.black{background: #18181D; color:#F2EFE8;}
+	.screen{height: 100vh; width: 100vw;}
+	.rela {position: relative;}
+	.absol {position: absolute;}
+	.multi{mix-blend-mode: multiply;}
+	.overflow{overflow: hidden;}
+	.row{width: 1280px;
+				margin: auto;
+				display: flex;
+				padding: 50px;
+				/*background: yellow;*/
+				margin-bottom: 10px;}
+	.subtitle{font-family: 'Bevan', cursive;
+		font-size: 33pt; color:#18181D; line-height: 40pt;}
+	.col-1{width: 100%; margin: 0px 10px;}
+	.col-2{width: 50%; margin: 0px 10px;}
+	.col-3{width: 33.33%; margin: 0px 10px;}
+	.col-6{width: 16.66%; margin: 0px 10px;}
+	.logo{height: 25px; mix-blend-mode: none;}
+	.sticky{position: sticky; top: 100px; width: 50%; height: 50%; mix-blend-mode:multiply;}
+		p{width: 50%;}
+	.button{height: 70px; width: 70px; border-radius: 100px; background: #F2EFE8; position: fixed; bottom: 50px; right: 50px; font-size: 24pt; line-height: 70px; text-align: center; color:#18181d; }
+	.button2{height: 70px; width: 70px; border-radius: 100px; background: #18181d; position: fixed; bottom: 50px; left: 50px; font-size: 24pt; line-height: 70px; text-align: center; color: #F2EFE8;}
+
+.grid{display: grid; height: 100%;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-auto-rows: 33.33%; overflow: hidden;
+			}
+.box{background: #F2EFE8; border-radius: 30px; width: 80vw; height: 88vh; position: fixed; top: 6vh; left: 10vw; overflow: hidden;}
+.x{color:#1200F2; position: fixed; top: 8vh; right: 12vw; }
+.popup{position: fixed; width: 110vw; height: 110vh; top: -5vh; left: -5vw; background: #18181D; opacity: 0.6; filter: blur(5px);}
+#overlay{ position: fixed; display: none; z-index: 101; }
+.content{font-size: 0.7rem; line-height: 1.5rem; width: 100%; width: 100%;}
+.wow{font-family:'MaruBuri-Regular'; animation: wow 1.5s alternate infinite; color: #1200F2;}
+@keyframes wow{from{opacity: 1} to{opacity: 0}}
+
+	</style>
+</head>
+<body>
+	<nav class="black" style="height: 63px;">
+		<img src="logo-ivory.svg" class="absol" style="height:33px; width:44px; top: 15px; left: 50px; mix-blend-mode:normal;">
+	<ul>
+	<li><a href="../../my_horn/index.html">my horn</li> 
+	<li><a href="../index.html">collection</a></li>
+	<li><a href="../../about/index.html">about</a></li>
+<li><a href="../../index.html">home</a></li> </ul>
+	</nav>
+<div class="ivory" style="width: 50vw; height: 100vh; position: fixed; z-index: -3;"></div>
+<div class="black" style="width: 50vw; height: 100vh; position: fixed; right: 0; z-index: 4;"></div>
+
+<header>
+	<div class="row fixed" style="left: 50vw; transform: translate(-50%); z-index: 6;">
+		<div class="col-2 subtitle" style=" padding-top: 5vh;color:#18181D; ">
+			collection<p class="wow" style="width:100%; padding: 0;">* 이미지를 클릭하세요. </p></div>
+		<div class="col-2 black" style="line-height: 85.5px;">
+			<h1 style=" padding-top: 5vh;padding-left: 100px;">‘난 왜이렇게 볼품없을까.’</h1></div>
+	</div>
+</header>
+
+<section>
+	<div class="row flex" style="padding-top: 200px">
+			<img src="horn.png" class="sticky" style="cursor: pointer; padding-top: 12%; transform:scale(1.9) translate(-32%); " onclick="on()">
+			<p>대학교 3학년 학생인 P군은 사람을 만나는 일이 두렵고 힘들다. 특히 낯선 사람을 만나거나 여러 사람 앞에서 무언가를 해야 하는 상황에서는 너무 불안하게 느껴져서 가능하면 이런 상황을 회피하고 있다.<br>
+<br>
+어느 날은 한 교양수업에서 조별과제가 주어졌다. 조원들이 
+한 자리에 모여 만날 날을 정하고 있었다. 모두가 본인의 
+스케줄을 말하며 일정을 조정하고 있었다.<br>
+<br>
+‘내 의견을 말했다가 기각당하면 어떡하지?’<br>
+<br>
+P는 자신의 의견이 소용 없을거란 생각에 아무런 말도 하지 
+않았다. 결국 날짜는 P의 의견 없이 결정되었다.<br>
+<br>
+‘거봐 난 중요한 사람이 아니야. 다들 안중에도 없어.’
+
+ </p>
+		</div>
+	</section>
+
+	<section>
+		<div class="row flex">
+			<img src="1.png" class="sticky" style="cursor: pointer;transform:scale(1.3) translate(-20px) translateY(10vh);" onclick="on()">
+
+			<p>수업을 마치고 조원끼리 친목 겸 카페에 가자는 제안이 나왔다. 그러나 P는 함께 가길 꺼려했다. 그냥 예의상의 제안으로, 진심은 다를 것이라고 생각했기 때문이다. 때마침 들려오는 조원의 기침소리가 
+P 자신은 낄 자리가 아니라고 말해주는 것 같았다.<br>
+<br>
+결국 P는 제안을 거절하며 자취방으로 도망치듯 돌아왔다. 
+꾸준히 조원들과 어울릴 자신이 없던 P는 그 수업 신청을 
+철회하였다.<br>
+<br>
+곧이어 자취방으로 찾아온 친구와 여느 대학생과 같이 떠들고 
+함께 게임을 하며 여가시간을 즐겼다. 사실 P는 인간관계에 
+관심이 없는 것이 아니다. 다만 자신이 상대방에게 거절당할까봐 두려운 마음에 사전에 미리 벽을 쳐 혹시모를 상처로부터 자신을 보호하는 것이다. 상대가 자신을 
+좋아한단 확신이 들면 그 벽은 허물어 진다.
+</p>
+		</div>
+	</section>
+	<section>
+		<div class="row flex rela">
+			<img src="2.png" class="sticky absol" style="left: 0; transform: scale(1.4) translate(3vw); cursor: pointer;" onclick="on()">
+			<p>이러한 회피적인 성격은 수줍은 성향을 타고났던 P의 어린시절에 형성되었다. 이러한 기질이 까다로웠던 터라 부모는 P를 자주 다그쳤다. P는 엄마에게 매달리며 애정을 구하길 포기하고 혼자 노는 방법을 택하고, 내면에 수치심이 가득 차 버린 경험이 현재까지 영향을 미치고 있었다.</p>
+		</div>
+	</section>
+
+</section>
+<a href="../4/index.html"><div class="button" style="z-index: 6;">→</div></a>
+<a href="../2/index.html"><div class="button2">←</div></a>
+<footer class="black">
+</footer>
+
+<content id="overlay" class="content">
+<div class="popup"></div>
+<div class="box">
+<div class="grid">
+	<div style="grid-column: 1 / 2; grid-row: 1/3;">
+		<div class="grid" style="margin-top: 50px;margin-left: 50px;">
+			<div style="grid-column: 1 / 2; grid-row: 1/4;" class="blue"><b>별칭<br><br>특징<br><br><br><br>유발원인<br><br><br>평생유발율</b></div> 
+			<div style="grid-column: 2 / 4; grid-row: 1/4;">자기혐오<br><br>자존감이 낮아 거부 당함을 지나치게 두려워함. 자신을 다른 사람에 비해 열등한 사람으로 바라봄.<br><br>어릴 적부터 경험한 모욕감, 당황감, 가치없는 느낌과 같은 환경적 경험<br><br>0.5~1% 여성 비율 높음</div>
+		</div>
+	</div>
+	<div style="grid-column: 2 / 4; grid-row: 1/3; margin: 50px;"><img src="horn.png" class="multi" style="height: 48vh; margin: auto;"></div>
+	<div style="grid-column: 1 / 4; grid-row: 3/4;" class="black">
+		<div class="grid blue2" style="margin: 50px; margin-top: 20px;">
+			<div style="grid-column: 1/2;padding-right: 10px;color: #4C5FFF;"><h1>회피성 성격장애</h1><br>DSM-5 에서 제공하는 진단문항입니다.<br>
+다음 중 4가지 이상에 해당한다면 
+전문의와 상담을 추천드립니다.</div>
+			<div style="grid-column: 2/3;padding-right: 10px;">1) 비판이나 거절, 인정받지 못함 등 때문에 의미 있는 대인 접촉이 관련되는 직업적 활동을 회피한다.<br>
+2) 자신을 좋아한다는 확신 없이는 사람들과 관계하는 것을 피한다.<br>
+3) 수치를 느끼거나 놀림 받음에 대한 두려움 때문에 친근한 대인관계 이내로 자신을 제한한다.<br>
+4) 사회적 상황에서 비판의 대상이 되거나 거절당하는 것에 대해 집착한다.<br>
+</div>
+			<div style="grid-column: 3/4; padding-right: 10px;">5) 부적절감으로 인해 새로운 대인관계를 맺는 것이 힘들다.<br>
+6) 자신을 사회적으로 부적절하고, 개인적으로 매력이 없는, 다른 사람에 비해 열등한 사람으로 바라본다.<br>
+7) 당황하는 인상을 줄까 봐 어떤 새로운 일에 관여하는 것을, 혹은 개인적인 위험을 감수하는 것을 드물게 마지못해서 한다.</div>
+		</div>
+	</div>
+	
+</div>
+</div>
+<div class="x" onclick="off()" style="font-size: 40px;cursor: pointer;">×</div>
+</content>
+
+<script>
+function on() {
+  document.getElementById("overlay").style.display = "block";}
+
+function off() {
+  document.getElementById("overlay").style.display = "none";}
+</script>
+
+</body>
+</html>

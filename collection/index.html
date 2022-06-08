@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>어느날 머리에 뿔이 자랐다</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+	<style type="text/css">
+		@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+	body,h1,h2,h3,h4,p,ul,li{margin: 0; padding: 0; }
+	html{font-size: 16pt; font-family:'MaruBuri-Regular'; word-break: keep-all;}
+	/*img{mix-blend-mode: multiply;}*/
+	p{font-size: 24pt; line-height: 40pt;}
+	li{list-style-type: none; width: 10%; float: right; height: 63px;
+		text-align: center; line-height: 63px;}
+	nav{position: fixed; z-index: 100; width: 100vw;}
+	a{color: #F2EFE8; text-decoration: none;}
+	a:hover{color:#4C5FFF; ;transition: all 0.3s;}
+	.fixed{position: fixed;}
+	.ivory{background: #F2EFE8; color: #18181D;}
+	.blue{color: #1200F2;}
+	.black{background: #18181D; color:#F2EFE8;}
+	.screen{height: 100vh; width: 100vw;}
+	.rela {position: relative;}
+	.absol {position: absolute;}
+	.multi{mix-blend-mode: multiply;}
+	.overflow{overflow: hidden;}
+	.row{width: 1280px;
+				margin: auto;
+				display: flex;
+				padding: 50px;
+				/*background: yellow;*/
+				margin-bottom: 10px;}
+	.subtitle{font-family: 'Bevan', cursive;
+		font-size: 33pt; line-height: 40pt;}
+	.col-1{width: 100%; margin: 0px 10px;}
+	.col-2{width: 50%; margin: 0px 10px;}
+	.col-3{width: 33.33%; margin: 0px 10px;}
+	.col-4{width: 25%; margin: 0px 10px;}
+	.col-6{width: 16.66%; margin: 0px 10px;}
+	.logo{height: 25px; mix-blend-mode: none;}
+	.marquee {overflow: hidden;}
+
+	.marquee-content {
+  display: flex;
+  animation: scrolling 22.5s linear infinite;}
+
+	.marquee-item {
+  flex: 0 0 20vw;
+  margin: 0 -10vw;
+}
+
+	.marquee-item img {
+  display: block;
+  height: 43vh;
+}
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-128vw); }
+}
+
+	</style>
+</head>
+<body>
+<section class="black rela" style="height: 40vh">
+	<nav class="black" style="height: 63px;">
+		<img src="logo-ivory.svg" class="absol" style="height:33px; width:44px; top: 15px; left: 50px">
+		<ul>
+	<li><a href="../my_horn/index.html">my horn</a></li> 
+	<li><a href="./index.html">collection</a></li>
+	<li><a href="../about/index.html">about</a></li>
+<li><a href="../index.html">home</a></li> </ul></nav>
+
+<div class="row absol" style="bottom:0px; margin-left: 10vw;">
+	<div class="subtitle col-1">
+		<img src="logo2-ivory.svg" class="logo">
+		<br>collection
+	</div>		
+</div>
+</section>
+<section class="ivory overflow" style="height: 45vh" >
+<!--<div class="ivory absol" style="height: 520px; width: 100vw; top: 35vh">-->
+</div>
+<div>
+	<div class="marquee">
+ 		 <div class="marquee-content"> 
+
+ 		 	<div class="multi marquee-item">
+    		  <a href="./4/index.html"><img src="horn6.png" style="transform: scale(0.8) translateY(0%); top: 22.5vh; margin: 0 -10vw;"></a>
+   			 </div>
+
+ 		   <div class="multi marquee-item rela">
+    	  	<a href="./1/index.html"><img src="horn5.png" class="rela" style="transform: scale(0.5) translateY(0%); top: 0vh; margin: 0 -2vw;"></a>
+    		</div>
+    
+   			<div class="multi marquee-item rela">
+    		  <a href="./2/index.html"><img src="horn4.png"style="transform: scale(0.9) translateX(-30%); top: 22.5vh;"></a>
+    		</div>
+    
+   			 <div class="multi marquee-item rela">
+     	 	<a href="./3/index.html"><img src="horn3.png" style="transform: scale(0.8) translateY(0%); top: 22.5vh;"></a>
+    		</div>
+    
+		    <div class="multi marquee-item">
+    		  <a href="./4/index.html"><img src="horn6.png" style="transform: scale(0.8) translateX(7%); top: 22.5vh;"></a>
+   			 </div>
+   			 <a href="./1/index.html"><div class="multi marquee-item rela">
+    	  	<img src="horn5.png" class="rela" style="transform: scale(0.5) translateX(-20%); top: 0vh;">
+    		</div></a>
+    		<div class="multi marquee-item rela">
+    		  <a href="./2/index.html"><img src="horn4.png"style="transform: scale(0.9) translateX(-50%); top: 22.5vh;"></a>
+    		</div>
+    
+   			 <div class="multi marquee-item rela">
+     	 	<a href="./3/index.html"><img src="horn3.png" style="transform: scale(0.8) translateY(0%); top: 22.5vh;"></a>
+    		</div>
+   			 
+
+  </div></div>
+</div>
+</section>
+<section class="black" style="height: 15vh; display: flex;">
+<div class="col-4">	<a href="./1/index.html">1</a></div>
+	<div class="col-4"><a href="./2/index.html">2</a></div>
+	<div class="col-4"><a href="./3/index.html">3</a></div>
+	<div class="col-4"><a href="./4/index.html">4</a></div>
+
+</section>
+</div>
+</div>
+</section>
+<footer class="black">
+</footer>
+</body>
+</html>
